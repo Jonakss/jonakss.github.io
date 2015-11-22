@@ -1,0 +1,40 @@
+body{
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+#avatar{
+	position: relative;
+	background-color: white;
+	height: 125px;
+	width: 200px;
+	border-radius: 200px;
+	border: 10px solid #006680;
+	margin: 150px auto 0 auto;
+	text-align: center;
+	padding: 75px 0 0 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+#avatar:hover{
+	/*margin: 110px auto 0 auto;*/
+	border-color: #ffe8a3;
+	background-color: #3b3d38;
+}
+#avatar img{
+	width: 135px;
+	height: 52px;
+	vertical-align: middle;
+}
+#avatar img:last-child{
+	visibility: hidden;
+}
+#avatar:hover :last-child{
+	visibility: visible;
+}
+#avatar:hover :first-child{
+	display: none;
+}
